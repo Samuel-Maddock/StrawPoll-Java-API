@@ -18,8 +18,8 @@ import java.util.List;
 
 public class StrawPoll {
     private static final String API_URL = "http://strawpoll.me/api/v2/polls";
-    private String id = "";
-    private String title = "";
+    private String id ;
+    private String title;
     private List<String> options = new ArrayList<>();
 
     @SerializedName("multi")
@@ -40,8 +40,13 @@ public class StrawPoll {
         this.options.add("Default option 2");
     }
 
+
     public StrawPoll(StrawPoll poll){ //Copy Constructor
         updatePoll(poll);
+    }
+
+    public StrawPoll(String url){
+        retrieve(url);
     }
 
     public StrawPoll(String title, String... options){
@@ -61,7 +66,7 @@ public class StrawPoll {
        this.dupCheck = dupCheck.name();
     }
 
-    private HttpURLConnection createConnection(String apiUrl, String request) throws IOException {
+    private HttpURLConnection createConnection(String apiUrl, String request) throws IOException{
         URL url = new URL(apiUrl);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod(request);
@@ -76,33 +81,39 @@ public class StrawPoll {
         return connection;
     }
 
-    public void create() throws IOException {
+    public void create() {
         Gson gson = new Gson();
         String jsonMessage = gson.toJson(this);
-        System.out.println(jsonMessage);
 
-        HttpURLConnection connection = createConnection(API_URL, "POST");
-        connection.setRequestProperty("Content-Length", Integer.toString(jsonMessage.length()));
+        try{
+            HttpURLConnection connection = createConnection(API_URL, "POST");
+            connection.setRequestProperty("Content-Length", Integer.toString(jsonMessage.length()));
 
-        DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
-        wr.writeBytes(jsonMessage);
-        wr.flush();
-        wr.close();
+            DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+            wr.writeBytes(jsonMessage);
+            wr.flush();
+            wr.close();
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String returnedJSON = br.readLine();
-        StrawPoll returnedPoll = gson.fromJson(returnedJSON, StrawPoll.class);
-        updatePoll(returnedPoll);
+            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String returnedJSON = br.readLine();
+            StrawPoll returnedPoll = gson.fromJson(returnedJSON, StrawPoll.class);
+            updatePoll(returnedPoll);
+        } catch(IOException e){
+            e.printStackTrace();;
+        }
     }
 
-    public void update() throws IOException {
-
-        HttpURLConnection connection = createConnection(API_URL + "/" + this.id, "GET");
-        BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String jsonMessage = br.readLine();
-        Gson gson = new Gson();
-        StrawPoll returnedPoll = gson.fromJson(jsonMessage, StrawPoll.class);
-        updatePoll(returnedPoll);
+    public void update() {
+        try{
+            HttpURLConnection connection = createConnection(API_URL + "/" + this.id, "GET");
+            BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String jsonMessage = br.readLine();
+            Gson gson = new Gson();
+            StrawPoll returnedPoll = gson.fromJson(jsonMessage, StrawPoll.class);
+            updatePoll(returnedPoll);
+        } catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     private void updatePoll(StrawPoll poll){
@@ -115,10 +126,9 @@ public class StrawPoll {
         this.votes = poll.getVotes();
     }
 
-    public void retrieve(){
-
+    public void retrieve(String url){
+        //TODO
     }
-
 
     public String getId() {
         return id;
