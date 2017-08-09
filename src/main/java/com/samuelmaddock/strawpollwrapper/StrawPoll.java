@@ -34,12 +34,11 @@ public class StrawPoll {
     private List<Integer> votes = new ArrayList<>();
 
 
-    public StrawPoll(){
+    public StrawPoll() {
         this.title = "Default Poll Title";
         this.options.add("Default option 1");
         this.options.add("Default option 2");
     }
-
 
     public StrawPoll(StrawPoll poll){ //Copy Constructor
         updatePoll(poll);
