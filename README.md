@@ -1,31 +1,42 @@
-# StrawPoll-Java-API
+# StrawPoll-Java-API  [![](https://jitpack.io/v/Samuel-Maddock/StrawPoll-Java-API.svg)](https://jitpack.io/#Samuel-Maddock/StrawPoll-Java-API) [![Build Status](https://travis-ci.org/Samuel-Maddock/StrawPoll-Java-API.svg?branch=master)](https://travis-ci.org/Samuel-Maddock/StrawPoll-Java-API)
 A Lightweight Java API Wrapper for [StrawPoll.me](http://www.strawpoll.me)
 
 ## Getting Started
 
 ### Prerequisites
 
-In order to use this API wrapper, it depends on the [GSON Library](https://github.com/google/gson) for JSON manipulation. If you are using Maven to build
-your application you can add this dependency by adding the following to your pom.xml
+In order to use this API wrapper, it requires the [GSON Library](https://github.com/google/gson) for JSON manipulation. If you are not using maven or gradle then you will need to have this installed along with this libraries .jar
 
+### Installing via Maven
+If you are using maven or gradle you do not need to worry about installing GSON.
+
+This library is available through JitPack. If you are building your project through [Maven](https://maven.apache.org) you need to add the following to your pom.xml 
+
+First the jitpack repository
+```
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```    
+Then the dependency of the project itself
 ```
 <dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <version>2.8.1</version>
+    <groupId>com.github.Samuel-Maddock</groupId>
+    <artifactId>StrawPoll-Java-API</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
-### Installing
-
-TODO
+If you are using gradle check the [JitPack info here!](https://jitpack.io/#Samuel-Maddock/StrawPoll-Java-API/1.0.0)
 
 ## Examples
 
 ### Quickly Creating a StrawPoll:
 
 Creating a StrawPoll is very simple. There are multiple ways to do this. 
-
 
 The easiest way is to pass the StrawPoll object all of its data at construction. You can quickly create a StrawPoll by passing it a title (the question of the poll) and a list of options that users will vote for. 
 
@@ -81,12 +92,15 @@ StrawPoll pollCopy = new StrawPoll(strawPoll);
 
 ### Updating and Retrieving a StrawPoll
 
-If you want to retrieve data from a StrawPoll with a known URL or Poll ID then you can call the ```retrieve()``` method.
+If you want to retrieve data from a StrawPoll with a known ```URL``` or ```Poll ID``` then you can call the ```retrieve()``` method or create a new poll by passing a valid strawpoll URL to the constructor
 
 ```java
+StrawPoll poll = new poll();
+poll = poll.retrieve("http://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
+
 StrawPoll strawPoll = new StrawPoll(1); //Retrieves strawpoll with id 1
 
-StrawPoll myPoll = new StrawPoll("www.strawpoll.me/1"); //Retrieves strawpoll with id 1
+StrawPoll myPoll = new StrawPoll("http://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
 ```
 
 You can then retrieve information about the poll using it's getters:
@@ -106,7 +120,7 @@ If you want to update a StrawPoll's information (eg the number of votes) then si
 ```java
 StrawPoll myPoll = new StrawPoll("Is StrawPoll good?", "Yes", "No");
 myPoll.create(); //Votes are [0,0]
-// Someone votes on the poll eg two people vote yes, one votes no
+// The following is called after someone has voted on the poll eg two people vote yes, one votes no
 myPoll.update();
 myPoll.getVotes(); //Votes are [2,1]
 ```
@@ -114,7 +128,7 @@ myPoll.getVotes(); //Votes are [2,1]
 ### Using Setters to Create a Poll
 
 Most StrawPoll fields have setters which you can use instead of the constructor. 
-All of these methods support method chaining which allow us to create a poll like this:
+These methods support method chaining which allow us to create a poll like this:
 
 ```java
 StrawPoll strawPoll = new StrawPoll();
@@ -131,17 +145,23 @@ When adding options we have two different methods:
 List<String> options = Contains some options...
 strawPoll.addOptions("Option 1", "Option 2"); //Add these to the current options already added.
 strawPoll.addOptions(options.toArray()) //Used for adding a List<String> to the current options list
+
 strawPoll.setOptions(options); //Replace the current list with a new list
 ```
 
 Note that you do not need to set every field. You only need to set the required fields of a title and an option. Everything else will be set to a default value.
 
 ### More Information
-The StrawPoll API itself has a rate limit of creating 100 poll by any given user within 60 minute. To view more information visit the [StrawPoll API Wiki](https://github.com/strawpoll/strawpoll/wiki/API)
+The StrawPoll API itself has a rate limit of creating 100 polls by any given user within 60 minute. To view more information visit the [StrawPoll API Wiki](https://github.com/strawpoll/strawpoll/wiki/API)
 
-You can also view the raw JSON of any StrawPoll object. This could be one that you have updated/retrieved or one that you have just created. Some examples are shown below:
+You can also view the raw JSON of any StrawPoll object. This could be one that you have updated/retrieved or one that you have just created. An example is shown below:
 ```java
+StrawPoll strawPoll = new StrawPoll("http://strawpoll.me/1")
 String rawJSON = strawPoll.toRawJSON();
+```
+```json
+JSON Returned:
+"id":"1","title":"What movie should we watch","options":["Sucker punch ","Pirates of carribian ","Prison logic","Witchhunter"],"multi":false,"dupcheck":"NORMAL","captcha":false,"votes":[25554,51847,10918,12331]}
 ```
 ## Built With
 
