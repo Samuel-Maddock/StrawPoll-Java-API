@@ -123,6 +123,7 @@ public class StrawPoll {
             HttpURLConnection connection = createConnection(API_URL + "/" + this.id, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
+            br.close();
             Gson gson = new Gson();
             StrawPoll returnedPoll = gson.fromJson(jsonMessage, StrawPoll.class);
             updatePoll(returnedPoll);
@@ -153,6 +154,7 @@ public class StrawPoll {
             HttpURLConnection connection = createConnection(url, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
+            br.close();
             Gson gson = new Gson();
             StrawPoll returnedPoll = gson.fromJson(jsonMessage, StrawPoll.class);
             return returnedPoll;
