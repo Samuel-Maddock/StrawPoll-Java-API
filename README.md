@@ -69,7 +69,7 @@ If you wish for the poll to allow multiple votes from the same user or to have a
 
 The format of the full constructor is as follows:
 ```java
-StrawPoll strawPoll = new StrawPoll(title, options, isMulti, hasCaptcha, DupCheck)
+StrawPoll strawPoll = new StrawPoll(title, options, isMulti, hasCaptcha, DupCheck);
 ```
 Constructor Parameters:
 
@@ -134,9 +134,9 @@ These methods support method chaining which allow us to create a poll like this:
 StrawPoll strawPoll = new StrawPoll();
 strawPoll
     .setTitle("This is my poll")
-    .addOptions("Option 1", "Option 2");
-    .setIsMulti(false);
-    .setHasCaptcha(true);
+    .addOptions("Option 1", "Option 2")
+    .setIsMulti(false)
+    .setHasCaptcha(true)
     .setDupCheck(DupCheckType.NORMAL)
     .create();
 ```
@@ -144,7 +144,7 @@ When adding options we have two different methods:
 ```java
 List<String> options = Contains some options...
 strawPoll.addOptions("Option 1", "Option 2"); //Add these to the current options already added.
-strawPoll.addOptions(options.toArray()) //Used for adding a List<String> to the current options list
+strawPoll.addOptions(options.toArray()); //Used for adding a List<String> to the current options list
 
 strawPoll.setOptions(options); //Replace the current list with a new list
 ```
@@ -156,12 +156,12 @@ The StrawPoll API itself has a rate limit of creating 100 polls by any given use
 
 You can also view the raw JSON of any StrawPoll object. This could be one that you have updated/retrieved or one that you have just created. An example is shown below:
 ```java
-StrawPoll strawPoll = new StrawPoll("http://strawpoll.me/1")
+StrawPoll strawPoll = new StrawPoll("http://strawpoll.me/1");
 String rawJSON = strawPoll.toRawJSON();
 ```
 ```json
 JSON Returned:
-"id":"1","title":"What movie should we watch","options":["Sucker punch ","Pirates of carribian ","Prison logic","Witchhunter"],"multi":false,"dupcheck":"NORMAL","captcha":false,"votes":[25554,51847,10918,12331]}
+{"id":"1","title":"What movie should we watch","options":["Sucker punch ","Pirates of carribian ","Prison logic","Witchhunter"],"multi":false,"dupcheck":"NORMAL","captcha":false,"votes":[25554,51847,10918,12331]}
 ```
 ## Built With
 
