@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54cbef52-3029-4bbf-a7f6-57e9c7efdfd0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/Example.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/StrawPoll.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/Example.class" afterPath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/Example.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" afterPath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" afterPath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" />
     </list>
@@ -30,15 +29,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrawPoll.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StrawPoll.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
+            <state relative-caret-position="2565">
+              <caret line="298" column="56" lean-forward="false" selection-start-line="298" selection-start-column="56" selection-end-line="298" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#991#992#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
                 <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
                 <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
                 <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -48,26 +45,36 @@
                 <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-                <element signature="e#6914#6915#0" expanded="true" />
-                <element signature="e#6973#6974#0" expanded="true" />
                 <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-                <element signature="e#9343#9344#0" expanded="true" />
-                <element signature="e#9410#9411#0" expanded="true" />
                 <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
+                <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Example.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="240">
+              <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="348">
+                <caret line="35" column="76" lean-forward="false" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -96,8 +103,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
       </list>
     </option>
   </component>
@@ -464,19 +471,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32716927" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30114448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -496,7 +503,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -540,8 +547,6 @@
           <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
             <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -551,13 +556,10 @@
             <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#6914#6915#0" expanded="true" />
-            <element signature="e#6973#6974#0" expanded="true" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#9343#9344#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
             <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -576,8 +578,6 @@
           <caret line="128" column="14" lean-forward="true" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
             <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -587,13 +587,10 @@
             <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#6914#6915#0" expanded="true" />
-            <element signature="e#6973#6974#0" expanded="true" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#9343#9344#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
             <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -622,8 +619,6 @@
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
             <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -633,13 +628,10 @@
             <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#6914#6915#0" expanded="true" />
-            <element signature="e#6973#6974#0" expanded="true" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#9343#9344#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
             <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -675,8 +667,6 @@
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
             <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -686,13 +676,10 @@
             <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#6914#6915#0" expanded="true" />
-            <element signature="e#6973#6974#0" expanded="true" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#9343#9344#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
             <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -729,14 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -748,8 +727,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="348">
+            <caret line="35" column="76" lean-forward="false" selection-start-line="35" selection-start-column="76" selection-end-line="35" selection-end-column="76" />
             <folding />
           </first_editor>
           <second_editor />
@@ -762,14 +741,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="301" column="7" lean-forward="true" selection-start-line="301" selection-start-column="7" selection-end-line="301" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="82" lean-forward="false" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="298" column="56" lean-forward="false" selection-start-line="298" selection-start-column="56" selection-end-line="298" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#StrawPoll#3;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
             <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
@@ -779,23 +774,10 @@
             <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#6914#6915#0" expanded="true" />
-            <element signature="e#6973#6974#0" expanded="true" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="e#9343#9344#0" expanded="true" />
-            <element signature="e#9410#9411#0" expanded="true" />
             <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
       </provider>

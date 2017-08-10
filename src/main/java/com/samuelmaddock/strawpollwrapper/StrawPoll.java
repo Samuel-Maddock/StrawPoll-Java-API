@@ -18,6 +18,7 @@ import java.util.List;
 
 public class StrawPoll {
     private static transient final String API_URL = "http://strawpoll.me/api/v2/polls";
+    private static transient final String SITE_URL = "http://www.strawpoll.me/";
     private String id = "";
     private String title;
     private List<String> options = new ArrayList<>();
@@ -43,7 +44,7 @@ public class StrawPoll {
     }
 
     public StrawPoll(String url){
-        retrieve(url);
+        updatePoll(retrieve(url));
     }
 
     public StrawPoll(String title, String... options){
@@ -120,7 +121,7 @@ public class StrawPoll {
         }
 
         try{
-            HttpURLConnection connection = createConnection(API_URL + "/" + this.id, "GET");
+            HttpURLConnection connection = createConnection(API_URL + this.id, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
             br.close();
@@ -140,18 +141,25 @@ public class StrawPoll {
         this.dupCheck = poll.getDupCheck().name();
         this.hasCaptcha = poll.hasCaptcha();
         this.votes = poll.getVotes();
-        this.pollURL = API_URL + "/" + poll.getId();
+        this.pollURL = SITE_URL + poll.getId();
     }
 
     /**
      * This retrieves the strawpolls information from the url given.
      * It then returns a StrawPoll object with the data retrieved.
      * @param url - The url of the strawpoll
-     * @return - The strawpoll object
+     * @return - The strawpoll object, null if the link is invalid.
      */
     public StrawPoll retrieve(String url){
+        if (!url.startsWith(SITE_URL)){
+            return null;
+        }
+
+        url = url.replace(SITE_URL, "");
+        url = url.replace("/r", "");
+        System.out.println(url);
         try{
-            HttpURLConnection connection = createConnection(url, "GET");
+            HttpURLConnection connection = createConnection(API_URL + url, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
             br.close();
