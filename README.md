@@ -26,7 +26,7 @@ Then the dependency of the project itself
 <dependency>
     <groupId>com.github.Samuel-Maddock</groupId>
     <artifactId>StrawPoll-Java-API</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 </dependency>
 ```
 
