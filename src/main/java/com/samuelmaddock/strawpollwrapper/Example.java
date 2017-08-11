@@ -10,5 +10,13 @@ public class Example {
         strawPoll.create();
         System.out.println(strawPoll.toRawJSON());  //Raw JSON of the created poll
         System.out.println(strawPoll.getPollURL()); //URL of created poll
+
+        StrawPoll myPoll = new StrawPoll();
+
+        myPoll = myPoll.retrieve(1);
+        System.out.println(myPoll.toRawJSON());
+
+        myPoll = myPoll.retrieve("http://www.strawpoll.me/1"); //Same as using retrieve(1)
+        System.out.println(myPoll.toRawJSON());
     }
 }

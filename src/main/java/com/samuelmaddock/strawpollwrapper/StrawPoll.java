@@ -47,6 +47,10 @@ public class StrawPoll {
         updatePoll(retrieve(url));
     }
 
+    public StrawPoll(int id){
+        updatePoll(retrieve(id));
+    }
+
     public StrawPoll(String title, String... options){
         this.title = title;
         this.options = Arrays.asList(options);
@@ -159,7 +163,7 @@ public class StrawPoll {
         url = url.replace("/r", "");
         System.out.println(url);
         try{
-            HttpURLConnection connection = createConnection(API_URL + url, "GET");
+            HttpURLConnection connection = createConnection(API_URL + "/" + url, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
             br.close();
@@ -170,6 +174,10 @@ public class StrawPoll {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public StrawPoll retrieve(int id){
+        return retrieve(SITE_URL + id);
     }
 
     /**
