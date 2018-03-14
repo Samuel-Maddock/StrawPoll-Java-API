@@ -17,8 +17,8 @@ import java.util.List;
  */
 
 public class StrawPoll {
-    private static transient final String API_URL = "http://strawpoll.me/api/v2/polls";
-    private static transient final String SITE_URL = "http://www.strawpoll.me/";
+    private static transient final String API_URL = "https://www.strawpoll.me/api/v2/polls";
+    private static transient final String SITE_URL = "https://www.strawpoll.me/";
     private String id = "";
     private String title;
     private List<String> options = new ArrayList<>();
@@ -65,7 +65,7 @@ public class StrawPoll {
        this(title, options);
        this.isMulti = isMulti;
        this.hasCaptcha = hasCaptcha;
-       this.dupCheck = dupCheck.name();
+       this.dupCheck = dupCheck.toString();
     }
 
     private HttpURLConnection createConnection(String apiUrl, String request) throws IOException{
@@ -110,7 +110,7 @@ public class StrawPoll {
             StrawPoll returnedPoll = gson.fromJson(returnedJSON, StrawPoll.class);
             updatePoll(returnedPoll);
         } catch(IOException e){
-            e.printStackTrace();;
+            e.printStackTrace();
         }
     }
 
@@ -142,7 +142,7 @@ public class StrawPoll {
         this.title = poll.getTitle();
         this.options = poll.getOptions();
         this.isMulti = poll.isMulti();
-        this.dupCheck = poll.getDupCheck().name();
+        this.dupCheck = poll.getDupCheck().toString();
         this.hasCaptcha = poll.hasCaptcha();
         this.votes = poll.getVotes();
         this.pollURL = SITE_URL + poll.getId();
@@ -305,7 +305,7 @@ public class StrawPoll {
      * @return - The instance of this class (for method-chaining)
      */
     public StrawPoll setDupCheck(DupCheckType dupCheck) {
-        this.dupCheck = dupCheck.name();
+        this.dupCheck = dupCheck.toString();
         return this;
     }
 
