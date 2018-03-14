@@ -161,7 +161,7 @@ public class StrawPoll {
 
         url = url.replace(SITE_URL, "");
         url = url.replace("/r", "");
-        System.out.println(url);
+
         try{
             HttpURLConnection connection = createConnection(API_URL + "/" + url, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));

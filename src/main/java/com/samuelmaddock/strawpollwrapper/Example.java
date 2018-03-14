@@ -16,7 +16,7 @@ public class Example {
         myPoll = myPoll.retrieve(1);
         System.out.println(myPoll.toRawJSON());
 
-        myPoll = myPoll.retrieve("http://www.strawpoll.me/1"); //Same as using retrieve(1)
+        myPoll = myPoll.retrieve("https://www.strawpoll.me/1"); //Same as using retrieve(1)
         System.out.println(myPoll.toRawJSON());
     }
 }

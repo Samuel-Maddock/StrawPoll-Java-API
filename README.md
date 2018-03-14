@@ -96,11 +96,11 @@ If you want to retrieve data from a StrawPoll with a known ```URL``` or ```Poll 
 
 ```java
 StrawPoll poll = new poll();
-poll = poll.retrieve("http://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
+poll = poll.retrieve("https://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
 
 StrawPoll strawPoll = new StrawPoll(1); //Retrieves strawpoll with id 1
 
-StrawPoll myPoll = new StrawPoll("http://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
+StrawPoll myPoll = new StrawPoll("https://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
 ```
 
 You can then retrieve information about the poll using it's getters:
@@ -156,7 +156,7 @@ The StrawPoll API itself has a rate limit of creating 100 polls by any given use
 
 You can also view the raw JSON of any StrawPoll object. This could be one that you have updated/retrieved or one that you have just created. An example is shown below:
 ```java
-StrawPoll strawPoll = new StrawPoll("http://www.strawpoll.me/1");
+StrawPoll strawPoll = new StrawPoll("https://www.strawpoll.me/1");
 String rawJSON = strawPoll.toRawJSON();
 ```
 ```json

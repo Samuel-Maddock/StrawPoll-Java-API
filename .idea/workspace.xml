@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54cbef52-3029-4bbf-a7f6-57e9c7efdfd0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/DupCheckType.class" afterPath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/DupCheckType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/Example.class" afterPath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/Example.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/StrawPoll.class" afterPath="$PROJECT_DIR$/target/classes/com/samuelmaddock/strawpollwrapper/StrawPoll.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" afterPath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" afterPath="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,21 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StrawPoll.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StrawPoll.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2835">
-              <caret line="328" column="0" lean-forward="true" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+            <state relative-caret-position="1155">
+              <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
@@ -43,8 +49,20 @@
                 <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-                <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
                 <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DupCheckType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +71,8 @@
       <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -70,6 +88,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>dupCheck</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -81,12 +104,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -153,7 +176,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="821" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,9 +194,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -186,8 +208,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strawpoll-wrapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StrawPoll-Java-API" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="strawpollwrapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -504,7 +553,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="805" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -516,19 +565,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32859176" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31586608" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3168044" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3048611" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3090129" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,7 +591,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -551,6 +600,44 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4920">
+          <caret line="328" column="0" lean-forward="true" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
+            <element signature="method#StrawPoll#5;class#StrawPoll#0" expanded="false" />
+            <element signature="method#StrawPoll#6;class#StrawPoll#0" expanded="false" />
+            <element signature="method#createConnection#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#create#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#update#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#updatePoll#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#retrieve#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
+            <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -576,7 +663,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -605,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -634,7 +719,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -684,7 +768,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -753,7 +836,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -784,7 +866,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -823,7 +904,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -869,7 +949,6 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
         </state>
@@ -905,17 +984,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -923,8 +1002,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1205">
-            <caret line="158" column="48" lean-forward="false" selection-start-line="158" selection-start-column="48" selection-end-line="158" selection-end-column="48" />
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="48" lean-forward="false" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
             <folding />
           </first_editor>
           <second_editor />
@@ -937,10 +1016,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/DupCheckType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/StrawPoll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2835">
-          <caret line="328" column="0" lean-forward="true" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+        <state relative-caret-position="1155">
+          <caret line="181" column="0" lean-forward="true" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#StrawPoll#4;class#StrawPoll#0" expanded="false" />
@@ -954,25 +1052,8 @@
             <element signature="method#setTitle#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setisMulti#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#setHasCaptcha#0;class#StrawPoll#0" expanded="false" />
-            <element signature="method#setDupCheck#0;class#StrawPoll#0" expanded="false" />
             <element signature="method#toRawJSON#0;class#StrawPoll#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/samuelmaddock/strawpollwrapper/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
