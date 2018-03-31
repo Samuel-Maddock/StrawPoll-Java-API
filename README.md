@@ -23,11 +23,16 @@ First the jitpack repository
 ```    
 Then the dependency of the project itself
 ```
-<dependency>
-    <groupId>com.github.Samuel-Maddock</groupId>
-    <artifactId>StrawPoll-Java-API</artifactId>
-    <version>1.0.1</version>
-</dependency>
+<dependencies>
+    ...
+    <dependency>
+        <groupId>com.github.Samuel-Maddock</groupId>
+        <artifactId>StrawPoll-Java-API</artifactId>
+        <version>1.0.3</version>
+    </dependency>
+    ...
+</dependencies>
+
 ```
 
 If you are using gradle check the [JitPack info here!](https://jitpack.io/#Samuel-Maddock/StrawPoll-Java-API/1.0.0)
@@ -95,7 +100,7 @@ StrawPoll pollCopy = new StrawPoll(strawPoll);
 If you want to retrieve data from a StrawPoll with a known ```URL``` or ```Poll ID``` then you can call the ```retrieve()``` method or create a new poll by passing a valid strawpoll URL to the constructor
 
 ```java
-StrawPoll poll = new poll();
+StrawPoll poll = new StrawPoll();
 poll = poll.retrieve("https://www.strawpoll.me/1"); //Retrieves strawpoll with id 1
 
 StrawPoll strawPoll = new StrawPoll(1); //Retrieves strawpoll with id 1
