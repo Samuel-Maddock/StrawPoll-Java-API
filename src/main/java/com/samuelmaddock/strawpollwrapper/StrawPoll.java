@@ -35,32 +35,70 @@ public class StrawPoll {
     private List<Integer> votes = new ArrayList<>();
     private transient String pollURL = "";
 
+    /**
+     * Default constructor, sets the title of the poll to "Default Poll Title"
+     * NOTE: You will have to call create() to send a POST request to create a StrawPoll on the website.
+     */
     public StrawPoll() {
         this.title = "Default Poll Title";
     }
 
+    /**
+     *  This is a copy constructor
+     *  NOTE: You will have to call create() to send a POST request to create a StrawPoll on the website.
+     * @param poll - creates a new poll object identical to the poll passed
+     */
     public StrawPoll(StrawPoll poll){ //Copy Constructor
         updatePoll(poll);
     }
 
+    /**
+     * This creates a StrawPoll object by retrieving the data from the poll url provided
+     * @param url - The URL of the poll to create the object from
+     */
     public StrawPoll(String url){
         updatePoll(retrieve(url));
     }
 
+    /**
+     * This creates a StrawPoll object by retrieving the data from the poll with the int id provided
+     * @param id
+     */
     public StrawPoll(int id){
         updatePoll(retrieve(id));
     }
 
+    /**
+     * This creates a StrawPoll object with the title and options passed to it.
+     * NOTE: You will have to call create() to send a POST request to create a StrawPoll on the website.
+     * @param title - The title of the StrawPoll
+     * @param options - The options of the StrawPoll
+     */
     public StrawPoll(String title, String... options){
         this.title = title;
         this.options = Arrays.asList(options);
     }
 
+    /**
+     * This creates a StrawPoll object with the title and the options in the List<String> passed.
+     * NOTE: You will have to call create() to send a POST request to create a StrawPoll on the website.
+     * @param title - The title of the StrawPoll
+     * @param options - The options of the StrawPoll
+     */
     public StrawPoll(String title, List<String> options){
         this.title = title;
         this.options = options;
     }
 
+    /**
+     * This creates a StrawPoll object with the title, options, isMulti, hasCaptcha and dupCheck.
+     * NOTE: You will have to call create() to send a POST request to create a StrawPoll on the website.
+     * @param title - The title of the StrawPoll
+     * @param options - The options of the poll as List<String>
+     * @param isMulti - True if users can vote multiple times, false otherwise
+     * @param hasCaptcha - True if the poll has captcha, false if not.
+     * @param dupCheck - The type of duplication checking to be used. Must be the enum DupCheckType
+     */
     public StrawPoll(String title, List<String> options, boolean isMulti, boolean hasCaptcha, DupCheckType dupCheck){
        this(title, options);
        this.isMulti = isMulti;
@@ -125,7 +163,7 @@ public class StrawPoll {
         }
 
         try{
-            HttpURLConnection connection = createConnection(API_URL + this.id, "GET");
+            HttpURLConnection connection = createConnection(API_URL + "/" + this.id, "GET");
             BufferedReader br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String jsonMessage = br.readLine();
             br.close();
@@ -176,6 +214,12 @@ public class StrawPoll {
         return null;
     }
 
+    /**
+     * This retrieves the strawpolls information from the integer id given.
+     * It then returns a StrawPoll object with the data retrieved.
+     * @param id - The integer id of the StrawPoll
+     * @return - The strawpoll object, null if the link is invalid.
+     */
     public StrawPoll retrieve(int id){
         return retrieve(SITE_URL + id);
     }
@@ -324,5 +368,10 @@ public class StrawPoll {
     public String toRawJSON(){
         Gson gson = new Gson();
         return gson.toJson(this);
+    }
+
+    @Override
+    public String toString(){
+        return toRawJSON();
     }
 }
