@@ -258,16 +258,18 @@ public class StrawPoll {
      * If you want to add options us {@code addOptions()} instead.
      * @param options - The {@code List<String>} collection of options
      */
-    public void setOptions(List<String> options){
+    public StrawPoll setOptions(List<String> options){
         this.options = options;
+        return this;
     }
 
     /**
      * This adds options to the strawpoll object.
      * @param options - A list of string options to be added (can be one or multiple)
      */
-    public void addOptions(String... options){
+    public StrawPoll addOptions(String... options){
         this.options.addAll(Arrays.asList(options));
+        return this;
     }
 
     /**
