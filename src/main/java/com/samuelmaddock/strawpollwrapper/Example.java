@@ -22,12 +22,26 @@ public class Example {
         System.out.println(" ");
         System.out.println("You have 50 seconds to vote on the poll via the below URl to see the update() method work!");
         System.out.println(strawPoll.getPollURL()); //URL of created poll
+
         try {
             Thread.sleep(50000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         strawPoll.update();
         System.out.println(strawPoll);
+
+        // Builder Pattern
+        StrawPoll strawPoll2 = new StrawPoll();
+        strawPoll2
+                .setTitle("This is my poll")
+                .addOptions("Option 1", "Option 2")
+                .setIsMulti(false)
+                .setHasCaptcha(true)
+                .setDupCheck(DupCheckType.NORMAL)
+                .create();
+
+
     }
 }
