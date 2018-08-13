@@ -257,6 +257,7 @@ public class StrawPoll {
      * Note that this will clear any previously stored options.
      * If you want to add options us {@code addOptions()} instead.
      * @param options - The {@code List<String>} collection of options
+     * @return - The updated strawpoll object for method chaining
      */
     public StrawPoll setOptions(List<String> options){
         this.options = options;
@@ -266,6 +267,7 @@ public class StrawPoll {
     /**
      * This adds options to the strawpoll object.
      * @param options - A list of string options to be added (can be one or multiple)
+     * @return - The updated strawpoll object for method chaining
      */
     public StrawPoll addOptions(String... options){
         this.options.addAll(Arrays.asList(options));
@@ -305,7 +307,7 @@ public class StrawPoll {
      * @param multi - The boolean to set
      * @return - The instance of this class (for method-chaining)
      */
-    public StrawPoll setisMulti(boolean multi) {
+    public StrawPoll setIsMulti(boolean multi) {
         isMulti = multi;
         return this;
     }
