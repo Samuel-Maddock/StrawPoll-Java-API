@@ -35,7 +35,7 @@ Then the dependency of the project itself
 
 ```
 
-If you are using gradle check the [JitPack info here!](https://jitpack.io/#Samuel-Maddock/StrawPoll-Java-API/1.0.0)
+If you are using gradle check the [JitPack info here!](https://jitpack.io/#Samuel-Maddock/StrawPoll-Java-API/1.0.4)
 
 ## Examples
 
